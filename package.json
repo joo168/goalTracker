@@ -42,7 +42,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://joo168.github.io/goal_tracker",
+  "homepage": "http://joo168.github.io/goal_tracker",
   "devDependencies": {
     "gh-pages": "^2.2.0"
   }
