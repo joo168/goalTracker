@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9417ce98c17a26f26eb480f686976765",
+    "revision": "1251b89ab81e3da7a4f848caabbd8f21",
     "url": "/goal_tracker/index.html"
   },
   {
-    "revision": "287c165116434e9d2f6d",
-    "url": "/goal_tracker/static/css/main.d44aab70.chunk.css"
+    "revision": "5518b2072c25739538ce",
+    "url": "/goal_tracker/static/css/main.203188fc.chunk.css"
   },
   {
     "revision": "5aa9f0cc9d365869dc34",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/goal_tracker/static/js/2.a32f6f3c.chunk.js.LICENSE"
   },
   {
-    "revision": "287c165116434e9d2f6d",
+    "revision": "5518b2072c25739538ce",
     "url": "/goal_tracker/static/js/main.38fa16d9.chunk.js"
   },
   {
