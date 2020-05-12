@@ -1,8 +1,5 @@
-import React, { useCallback } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
 import AddList from '../../components/add/AddList';
-import HeaderContainer from '../common/HeaderContainer';
-import SubHeader from '../../components/common/SubHeader';
 import { remove, toggle } from '../../modules/add';
 import { connect } from 'react-redux';
 

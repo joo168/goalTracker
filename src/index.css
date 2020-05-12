@@ -29,7 +29,7 @@ body {
   z-index: -10;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
@@ -37,16 +37,16 @@ code {
 a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
-.App {
+/* .App {
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 1rem 0;
   width: 60%;
   min-width: 400px;
   max-width: 450px;
+  height: 50%;
   background-color: white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   padding-bottom: 2rem;
-  margin-bottom: 1rem;
-}
+} */

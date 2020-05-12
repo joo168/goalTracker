@@ -26,17 +26,14 @@ const initialState = {
     {
       id: 1,
       name: '앱 만들기',
-      // checked: true,
       color: 'black',
     },
     {
       id: 2,
       name: '영양제 챙겨먹기',
-      // checked: false,
       color: 'black',
     },
   ],
-  // lists: [],
 };
 
 const add = handleActions(
@@ -49,12 +46,6 @@ const add = handleActions(
       ...state,
       color: action.payload,
     }),
-    // [TOGGLE]: (state, { payload: id }) => ({
-    //   ...state,
-    //   lists: state.lists.map(list =>
-    //     list.id === id ? { ...list, checked: !list.checked } : list,
-    //   ),
-    // }),
     [REMOVE]: (state, { payload: id }) => ({
       ...state,
       results: state.results.filter((result) => result.id !== id),

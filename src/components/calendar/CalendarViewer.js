@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { MdChevronLeft, MdChevronRight, MdAlarmOn } from 'react-icons/md';
-import { TiHeartFullOutline } from 'react-icons/ti';
+import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import palette from '../../lib/styles/palette';
-import moment from 'moment';
 
 const CalendarViewer = ({ setSelectedDay, selectedDay, results, toggle }) => {
   const onClickLeft = () => {
@@ -13,76 +11,17 @@ const CalendarViewer = ({ setSelectedDay, selectedDay, results, toggle }) => {
     setSelectedDay(selectedDay.clone().add(7, 'day'));
   };
 
-  // function generate() {
-  //   const today = moment();
-  //   const startWeek = today.clone().startOf('month').week();
-  //   const endWeek =
-  //     today.clone().endOf('month').week() === 1
-  //       ? 53
-  //       : today.clone().endOf('month').week();
-  //   let calendar = [];
-  //   for (let week = startWeek; week <= endWeek; week++) {
-  //     calendar.push(
-  //       <div className="row" key={week}>
-  //         {Array(7)
-  //           .fill(0)
-  //           .map((n, i) => {
-  //             let current = today
-  //               .clone()
-  //               .week(week)
-  //               .startOf('week')
-  //               .add(n + i, 'day');
-  //             // let isSelected =
-  //             //   today.format('YYYYMMDD') === current.format('YYYYMMDD')
-  //             //     ? 'selected'
-  //             //     : '';
-  //             let isGrayed =
-  //               current.format('MM') === today.format('MM') ? '' : 'grayed';
-  //             return (
-  //               // ${isSelected}   바로 아래 클래스네임에 포함..
-  //               <div
-  //                 className={`box
-  //               ${isGrayed}`}
-  //                 key={i}
-  //                 id={
-  //                   calendar.date.format('YYYYMMDD') ===
-  //                   selectedDay.format('YYYYMMDD')
-  //                     ? 'selected'
-  //                     : ''
-  //                 }
-  //               >
-  //                 <span
-  //                   className={`text`}
-  //                   onClick={() => setSelectedDay(calendar.date)}
-  //                 >
-  //                   {current.format('D')}
-  //                 </span>
-  //               </div>
-  //             );
-  //           })}
-  //       </div>,
-  //     );
-  //   }
-  //   return calendar;
-  // }
-
   const calendar = [];
-  // const [bg, changeBg] = useState('');
 
   for (let i = 0; i < 7; i++) {
     calendar.push({
       i: i,
       date: selectedDay.clone().startOf('week').add(i, 'day'),
-      // isOn: '',
-      // background: bc,
-      // date: selectedDay.clone().startOf('month').add(i, 'day'),
     });
   }
 
   const onClick = (e, id, done) => {
     e.target.id = 'red';
-    // e.target.id = e.target.id + ' red';
-    console.log(e.target.id);
   };
 
   return (
@@ -121,13 +60,10 @@ const CalendarViewer = ({ setSelectedDay, selectedDay, results, toggle }) => {
             <span className="text SAT">SAT</span>
           </div>
         </div>
-        {/* {generate()} */}
         <div className="row">
           {calendar.map((c) => (
             <div
               className="box"
-              // style={{ background: bc }}
-              // onClick={onClick}
               id={
                 c.date.format('YYYYMMDD') === selectedDay.format('YYYYMMDD')
                   ? 'selected'
@@ -147,13 +83,10 @@ const CalendarViewer = ({ setSelectedDay, selectedDay, results, toggle }) => {
                 onClick={onClick}
                 id={c.date}
                 style={{ fontSize: '26px' }}
-              >
-                {/* O ○  */}♡{/* 이건 안된다. <TiHeartFullOutline /> */}
-              </div>
+              ></div>
             </div>
           ))}
         </div>
-        {/* <div onClick={onClick}>click!</div> */}
       </CalendarViewerBlock>
     </>
   );
@@ -212,7 +145,6 @@ const CalendarViewerBlock = styled.div`
         height: 2rem;
         border-radius: 100%;
         font-weight: 500;
-        /* color: gray; */
       }
     }
     #selected {
@@ -224,16 +156,7 @@ const CalendarViewerBlock = styled.div`
     .box {
       #red {
         color: #fa5252;
-        /* background-color: #f03e3e; */
       }
-      /* .first {
-        background-color: yellow;
-        color: black;
-      }
-      .second {
-        background-color: blue;
-        color: black;
-      } */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -262,129 +185,4 @@ const CalendarViewerBlock = styled.div`
       }
     }
   }
-
-  /* .row{
-      display: flex;
-      cursor: pointer;
-      &:first-child{
-        cursor: initial;
-        .box{
-          font-weight: bold;
-        }
-        .box:hover > span.text{
-          background-color: white;
-        }
-      }
-      .box{
-        position: relative;
-        display: inline-flex;
-        width: calc(100%/7);
-        height: 0;
-        padding-bottom: calc(100%/7);
-        font-size: 12pt;
-        &:first-child{
-          color: red;
-        }
-        &:last-child{
-          color: #588dff;
-        }
-        &.grayed{
-          color: gray;
-        }
-        &:hover{
-          span.text{
-            background-color: rgba(#588dff, 0.1);
-          }
-        }
-        &.selected{
-          span.text{
-            background-color: #588dff;
-            color: white;
-          }
-        }
-        span.text{
-          border-radius: 100%;
-          display: inline-flex;
-          justify-content: center;
-          align-items: center;
-          width: 60%;
-          height: 60%;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%,-50%);
-        }
-      }
-    }
-.row {
-    display: flex;
-    justify-content: space-between;
-    .box2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: calc(90% / 7);
-      font-size: 0.8rem;
-      font-weight: 500;
-      &:first-child > .text {
-        color: red;
-      }
-      &:last-child > .text {
-        color: #588dff;
-      }
-      .text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 2rem;
-        height: 2rem;
-        border-radius: 100%;
-        color: black;
-      }
-    }
-  } */
-
-  /* .list-container {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 550px;
-    .list-header {
-      display: flex;
-      justify-content: center;
-      color: '#495057';
-      font-weight: 540;
-      font-family: Geneva, Tahoma, sans-serif;
-      letter-spacing: 0.1px;
-      font-size: 14px;
-      .icon {
-        font-size: 20px;
-        padding-right: 4px;
-        padding-bottom: 5px;
-      }
-    }
-    .list-contents {
-      display: flex;
-      flex-direction: column;
-      border: 1.5px solid lightgray;
-      border-radius: 15px;
-      padding: 10px;
-      width: 75%;
-      height: 10px;
-      .list {
-        display: flex;
-        flex-direction: column;
-        margin: 5px;
-      }
-      .result-list {
-        font-size: 15px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-      .toggle {
-        padding-top: 3px;
-      }
-    }
-  } */
 `;

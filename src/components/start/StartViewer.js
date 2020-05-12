@@ -3,12 +3,10 @@ import Button from '../../components/common/Button';
 import styled from 'styled-components';
 import img from '../../imgs/1.jpg';
 import palette from '../../lib/styles/palette';
-import { Link } from 'react-router-dom';
 
 const StartViewer = ({ username, setUser }) => {
   const onChange = (e) => {
     setUser(e.target.value);
-    console.log(username);
   };
 
   const saveUser = (username) => {
