@@ -1,5 +1,5 @@
 {
-  "name": "supplement_tracker2",
+  "name": "goalTracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,7 +43,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://joo168.github.io/goal_tracker",
+  "homepage": "http://joo168.github.io/goalTracker",
   "devDependencies": {
     "gh-pages": "^2.2.0"
   }
