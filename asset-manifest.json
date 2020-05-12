@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/goal_tracker/static/css/main.cd42ca82.chunk.css",
-    "main.js": "/goal_tracker/static/js/main.b1b24d7b.chunk.js",
-    "main.js.map": "/goal_tracker/static/js/main.b1b24d7b.chunk.js.map",
-    "runtime-main.js": "/goal_tracker/static/js/runtime-main.533ef8e1.js",
-    "runtime-main.js.map": "/goal_tracker/static/js/runtime-main.533ef8e1.js.map",
-    "static/js/2.4d9c008a.chunk.js": "/goal_tracker/static/js/2.4d9c008a.chunk.js",
-    "static/js/2.4d9c008a.chunk.js.map": "/goal_tracker/static/js/2.4d9c008a.chunk.js.map",
-    "index.html": "/goal_tracker/index.html",
-    "precache-manifest.8f873f9665a604b5dba2ab443b1a8c59.js": "/goal_tracker/precache-manifest.8f873f9665a604b5dba2ab443b1a8c59.js",
-    "service-worker.js": "/goal_tracker/service-worker.js",
-    "static/css/main.cd42ca82.chunk.css.map": "/goal_tracker/static/css/main.cd42ca82.chunk.css.map",
-    "static/js/2.4d9c008a.chunk.js.LICENSE": "/goal_tracker/static/js/2.4d9c008a.chunk.js.LICENSE",
-    "static/media/index.css": "/goal_tracker/static/media/1.505e9103.jpg"
+    "main.css": "/goalTracker/static/css/main.a438019f.chunk.css",
+    "main.js": "/goalTracker/static/js/main.393b5e02.chunk.js",
+    "main.js.map": "/goalTracker/static/js/main.393b5e02.chunk.js.map",
+    "runtime-main.js": "/goalTracker/static/js/runtime-main.9bca7dce.js",
+    "runtime-main.js.map": "/goalTracker/static/js/runtime-main.9bca7dce.js.map",
+    "static/js/2.6a99f5e5.chunk.js": "/goalTracker/static/js/2.6a99f5e5.chunk.js",
+    "static/js/2.6a99f5e5.chunk.js.map": "/goalTracker/static/js/2.6a99f5e5.chunk.js.map",
+    "index.html": "/goalTracker/index.html",
+    "precache-manifest.678efb4a456a69986d010210c36628c3.js": "/goalTracker/precache-manifest.678efb4a456a69986d010210c36628c3.js",
+    "service-worker.js": "/goalTracker/service-worker.js",
+    "static/css/main.a438019f.chunk.css.map": "/goalTracker/static/css/main.a438019f.chunk.css.map",
+    "static/js/2.6a99f5e5.chunk.js.LICENSE": "/goalTracker/static/js/2.6a99f5e5.chunk.js.LICENSE",
+    "static/media/index.css": "/goalTracker/static/media/1.505e9103.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.533ef8e1.js",
-    "static/js/2.4d9c008a.chunk.js",
-    "static/css/main.cd42ca82.chunk.css",
-    "static/js/main.b1b24d7b.chunk.js"
+    "static/js/runtime-main.9bca7dce.js",
+    "static/js/2.6a99f5e5.chunk.js",
+    "static/css/main.a438019f.chunk.css",
+    "static/js/main.393b5e02.chunk.js"
   ]
 }
