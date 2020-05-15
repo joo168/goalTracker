@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/goalTracker/static/css/main.245feb71.chunk.css",
-    "main.js": "/goalTracker/static/js/main.e530ec7d.chunk.js",
-    "main.js.map": "/goalTracker/static/js/main.e530ec7d.chunk.js.map",
+    "main.js": "/goalTracker/static/js/main.10b76154.chunk.js",
+    "main.js.map": "/goalTracker/static/js/main.10b76154.chunk.js.map",
     "runtime-main.js": "/goalTracker/static/js/runtime-main.d8981de0.js",
     "runtime-main.js.map": "/goalTracker/static/js/runtime-main.d8981de0.js.map",
-    "static/js/2.ea7ff86a.chunk.js": "/goalTracker/static/js/2.ea7ff86a.chunk.js",
-    "static/js/2.ea7ff86a.chunk.js.map": "/goalTracker/static/js/2.ea7ff86a.chunk.js.map",
+    "static/js/2.a4e0bc2c.chunk.js": "/goalTracker/static/js/2.a4e0bc2c.chunk.js",
+    "static/js/2.a4e0bc2c.chunk.js.map": "/goalTracker/static/js/2.a4e0bc2c.chunk.js.map",
     "index.html": "/goalTracker/index.html",
-    "precache-manifest.f663452aab793049d44947b437f5cde6.js": "/goalTracker/precache-manifest.f663452aab793049d44947b437f5cde6.js",
+    "precache-manifest.304033bb881d8be2184f3ac368f0b4e9.js": "/goalTracker/precache-manifest.304033bb881d8be2184f3ac368f0b4e9.js",
     "service-worker.js": "/goalTracker/service-worker.js",
     "static/css/main.245feb71.chunk.css.map": "/goalTracker/static/css/main.245feb71.chunk.css.map",
-    "static/js/2.ea7ff86a.chunk.js.LICENSE": "/goalTracker/static/js/2.ea7ff86a.chunk.js.LICENSE",
+    "static/js/2.a4e0bc2c.chunk.js.LICENSE": "/goalTracker/static/js/2.a4e0bc2c.chunk.js.LICENSE",
     "static/media/index.css": "/goalTracker/static/media/1.505e9103.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d8981de0.js",
-    "static/js/2.ea7ff86a.chunk.js",
+    "static/js/2.a4e0bc2c.chunk.js",
     "static/css/main.245feb71.chunk.css",
-    "static/js/main.e530ec7d.chunk.js"
+    "static/js/main.10b76154.chunk.js"
   ]
 }
