@@ -25,5 +25,4 @@ const AddPageBlock = styled.div`
   min-height: 613px;
   background-color: white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  padding-bottom: 2rem;
 `;
