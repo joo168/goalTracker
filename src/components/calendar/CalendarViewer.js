@@ -78,12 +78,9 @@ const CalendarViewer = ({ setSelectedDay, selectedDay, results, toggle }) => {
               >
                 {c.date.format('D')}
               </span>
-              <div
-                cursor="pointer"
-                onClick={onClick}
-                id={c.date}
-                style={{ fontSize: '26px' }}
-              ></div>
+              <div className="checkHeart" onClick={onClick} id={c.date}>
+                ♡
+              </div>
             </div>
           ))}
         </div>
@@ -154,6 +151,14 @@ const CalendarViewerBlock = styled.div`
       }
     }
     .box {
+      .checkHeart {
+        cursor: pointer;
+        font-size: 26px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+      }
       #red {
         color: #fa5252;
       }

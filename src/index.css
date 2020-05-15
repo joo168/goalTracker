@@ -29,7 +29,7 @@ body {
   z-index: -10;
 }
 
-/* code {
+code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
@@ -37,7 +37,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-} */
+}
 
 /* .App {
   margin: auto;

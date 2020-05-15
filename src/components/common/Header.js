@@ -33,7 +33,8 @@ const HeaderBlock = styled.div`
   display: flex;
   justify-content: space-between;
   .logo {
-    font-size: 1.2rem;
+    /* text-decoration: none; */
+    font-size: 1.35rem;
     font-weight: 800;
     letter-spacing: 2px;
   }

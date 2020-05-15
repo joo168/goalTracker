@@ -22,7 +22,7 @@ const StartViewer = ({ username, setUser }) => {
     e.preventDefault();
     alert('입력하신 이름이 ' + username + ' 인가요?');
     saveUser(username);
-    window.location = '/calendar';
+    window.location = '/goalTracker/#/calendar';
   };
 
   return (

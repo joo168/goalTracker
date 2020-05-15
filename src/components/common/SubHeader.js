@@ -60,6 +60,9 @@ const SubHeaderBlock = styled.div`
 
   .toAdd,
   .toCal {
+    /* color: white; */
+    font-size: 1.1rem;
+    font-weight: 500;
     background: transparent;
     position: relative;
     display: inline-block;
@@ -88,9 +91,10 @@ const SubHeaderBlock = styled.div`
   }
 
   span.title {
+    /* color: white; */
     padding: 4px;
     font-size: 1.1rem;
-    font-weight: 540;
+    font-weight: 570;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 `;

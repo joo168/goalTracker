@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter, BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from './modules';
@@ -12,10 +12,13 @@ import rootReducer from './modules';
 const store = createStore(rootReducer);
 
 ReactDOM.render(
+  // <Provider store={store} basename={process.env.PUBLIC_URL}>
   <Provider store={store}>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
+    {/* </BrowserRouter> */}
   </Provider>,
   document.getElementById('root'),
 );
