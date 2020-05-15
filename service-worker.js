@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/goalTracker/precache-manifest.022b3321a2b3f6fbe6814302e70d7be2.js"
+  "/goalTracker/precache-manifest.7af5a44ece827a0ccd7f63539198c3db.js"
 );
 
 self.addEventListener('message', (event) => {
